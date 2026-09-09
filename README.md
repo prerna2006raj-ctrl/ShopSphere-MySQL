@@ -16,7 +16,7 @@ Project Objectives
 * Learn advanced MySQL concepts
 * Maintain a professional GitHub project
 * Build a project suitable for a portfolio
-* 
+  
 Technologies Used
 * MySQL
 * MySQL Workbench
