@@ -28,7 +28,7 @@ Technologies Used
 | Day    | Topic                  | Project Implementation                          | Status |
 | ------ | ---------------------- | ----------------------------------------------- | ------ |
 | Day 1  | Database Creation      | Create ShopSphere database and Customers table  | ✅      |
-| Day 2  | Tables & Constraints   | Create Products and Categories tables           | ⬜      |
+| Day 2  | Tables & Constraints   | Create Products and Categories tables           | ✅      |
 | Day 3  | INSERT                 | Insert realistic e-commerce data                | ⬜      |
 | Day 4  | SELECT                 | Basic data retrieval and business queries       | ⬜      |
 | Day 5  | WHERE                  | Filter customers, products and orders           | ⬜      |
@@ -274,10 +274,4 @@ After completing this project, I will have practical experience with:
 Prerna Raj
 MySQL Learning Project — 2026
 
-Project Status
-Currently in development
-
-Day 1 / 15 completed
-████░░░░░░░░░░░ 7%
-The project will be updated daily as new MySQL concepts are learned and implemented.
 
