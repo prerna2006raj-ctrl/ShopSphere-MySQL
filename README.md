@@ -42,85 +42,6 @@ Technologies Used
 | Day 13 | Subqueries & UNION     | Advanced business queries                       | ⬜      |
 | Day 14 | Views & Indexes        | Create reusable reports and optimize queries    | ⬜      |
 | Day 15 | Final Project          | Complete database, analysis and documentation   | ⬜      |
-
-Database Structure
-The final database will contain multiple related tables:
-                    ┌──────────────┐
-                    │  Categories  │
-                    └──────┬───────┘
-                           │
-                           ▼
-                    ┌──────────────┐
-                    │   Products   │
-                    └──────┬───────┘
-                           │
-                           ▼
-┌──────────────┐     ┌──────────────┐
-│  Customers   │────▶│    Orders    │
-└──────────────┘     └──────┬───────┘
-                            │
-                            ▼
-                     ┌──────────────┐
-                     │ Order_Items  │
-                     └──────┬───────┘
-                            │
-                            ▼
-                     ┌──────────────┐
-                     │   Payments   │
-                     └──────────────┘
-Additional tables may be added as the project develops.
-
-Project Structure
-ShopSphere-MySQL/
-│
-├── README.md
-│
-├── Day-01-Database/
-│   └── day01.sql
-│
-├── Day-02-Tables/
-│   └── day02.sql
-│
-├── Day-03-Insert/
-│   └── day03.sql
-│
-├── Day-04-Select/
-│   └── day04.sql
-│
-├── Day-05-Where/
-│   └── day05.sql
-│
-├── Day-06-OrderBy-Limit/
-│   └── day06.sql
-│
-├── Day-07-Update-Delete/
-│   └── day07.sql
-│
-├── Day-08-Keys-Relationships/
-│   └── day08.sql
-│
-├── Day-09-Joins/
-│   └── day09.sql
-│
-├── Day-10-Aggregates/
-│   └── day10.sql
-│
-├── Day-11-GroupBy-Having/
-│   └── day11.sql
-│
-├── Day-12-Functions/
-│   └── day12.sql
-│
-├── Day-13-Subqueries-Union/
-│   └── day13.sql
-│
-├── Day-14-Views-Indexes/
-│   └── day14.sql
-│
-└── Day-15-Final-Project/
-    ├── database.sql
-    ├── queries.sql
-    └── README.md
     
 Key Business Questions
 The database will eventually be used to answer questions such as:
@@ -358,7 +279,5 @@ Currently in development
 
 Day 1 / 15 completed
 ████░░░░░░░░░░░ 7%
-```
-
 The project will be updated daily as new MySQL concepts are learned and implemented.
 
