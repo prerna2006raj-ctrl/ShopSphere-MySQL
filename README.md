@@ -1,277 +1,1620 @@
-ShopSphere — E-Commerce Database System
-A 15-Day MySQL Project built to learn and apply SQL concepts through a practical e-commerce database system.
+🛒 ShopSphere — E-Commerce Database & SQL Analysis Project
 
-About the Project
-ShopSphere is an e-commerce database management project developed using MySQL.
-The project is designed as a 15-day learning journey, where each day introduces a new MySQL concept and applies it to the same real-world database.
-Instead of creating separate small SQL programs, this project gradually builds one complete e-commerce database containing customers, products, categories, orders, payments, and other related information.
+A 15-Day MySQL Project for Relational Database Design, SQL Querying, Data Analysis, and Business Intelligence
 
-Project Objectives
-* Learn MySQL through practical implementation
-* Understand database and table design
-* Practice writing SQL queries
-* Understand relationships between tables
-* Work with real-world e-commerce data
-* Perform sales and customer analysis
-* Learn advanced MySQL concepts
-* Maintain a professional GitHub project
-* Build a project suitable for a portfolio
-  
-Technologies Used
-* MySQL
-* MySQL Workbench
-* SQL
-* Git
-* GitHub
-  
-15-Day Learning & Development Plan
-| Day    | Topic                  | Project Implementation                          | Status |
-| ------ | ---------------------- | ----------------------------------------------- | ------ |
-| Day 1  | Database Creation      | Create ShopSphere database and Customers table  | ✅      |
-| Day 2  | Tables & Constraints   | Create Products and Categories tables           | ✅      |
-| Day 3  | INSERT                 | Insert realistic e-commerce data                | ✅      |
-| Day 4  | SELECT                 | Basic data retrieval and business queries       | ✅      |
-| Day 5  | WHERE                  | Filter customers, products and orders           | ✅      |
-| Day 6  | ORDER BY & LIMIT       | Sorting and finding top records                 | ⬜      |
-| Day 7  | UPDATE & DELETE        | Manage and modify database records              | ⬜      |
-| Day 8  | Primary & Foreign Keys | Create Orders and establish relationships       | ⬜      |
-| Day 9  | JOINs                  | Combine customer, order and product information | ⬜      |
-| Day 10 | Aggregate Functions    | COUNT, SUM, AVG, MIN and MAX                    | ⬜      |
-| Day 11 | GROUP BY & HAVING      | Sales and customer analysis                     | ⬜      |
-| Day 12 | SQL Functions          | Date, String and CASE functions                 | ⬜      |
-| Day 13 | Subqueries & UNION     | Advanced business queries                       | ⬜      |
-| Day 14 | Views & Indexes        | Create reusable reports and optimize queries    | ⬜      |
-| Day 15 | Final Project          | Complete database, analysis and documentation   | ⬜      |
-    
-Key Business Questions
-The database will eventually be used to answer questions such as:
+ShopSphere is a practical e-commerce database management and SQL analysis project developed using MySQL.
 
-#Customer Analysis
-* Who are the top customers by spending?
-* Which customers have never placed an order?
-* How many customers are from each city?
-* What is the average customer spending?
-  
-#Product Analysis
-* Which products are best-selling?
-* Which products have low inventory?
-* Which category generates the most revenue?
-* Which products have never been sold?
-  
-#Sales Analysis
-* What is the total revenue?
-* What is the average order value?
-* Which month has the highest sales?
-* Which customer generated the most revenue?
-* Which product generated the highest revenue?
-  
-#Business Analysis
-* Which category performs best?
-* What are the top 5 products?
-* How many orders are completed, pending or cancelled?
-* What is the monthly sales trend?
-* Which customers are the most valuable?
-  
-MySQL Concepts Covered
-During the 15-day project, the following concepts will be practiced:
+The project was built as a structured 15-day learning and development journey, where each day focused on a specific SQL/database concept and applied that concept to the same e-commerce system.
+
+Rather than creating independent SQL exercises, ShopSphere progressively builds and analyzes a relational database containing customers, categories, products, orders, and order items.
+
+The project begins with database and table creation and gradually progresses toward advanced querying, aggregation, JOINs, subqueries, conditional logic, views, indexes, transactions, and final e-commerce business analysis.
+
+📌 Project Overview
+
+ShopSphere represents a simplified e-commerce system where customers can place orders containing different products.
+
+The database is designed around the following core entities:
+
+Customers
+    │
+    │
+    ▼
+  Orders
+    │
+    │
+    ▼
+Order Items
+    │
+    │
+    ▼
+ Products
+    │
+    │
+    ▼
+Categories
+
+The project demonstrates how relational databases can be used to:
+
+Store structured business data
+Maintain relationships between entities
+Retrieve information using SQL
+Filter and sort records
+Modify database records
+Calculate business metrics
+Analyze customer and product behavior
+Generate sales-related reports
+Organize reusable queries using views
+Improve query organization and performance using indexes
+Safely manage database changes using transactions
+🎯 Problem Statement
+
+An e-commerce business generates different types of information every day:
+
+Customer information
+Product information
+Product categories
+Customer orders
+Products purchased in each order
+Product quantities
+Product prices
+Inventory information
+
+If this information is not organized properly, it becomes difficult to answer important business questions.
+
+For example:
+
+Which products are performing well?
+
+Which products have low stock?
+
+Which category contains the most products?
+
+Which customers have placed orders?
+
+How much revenue is generated by products or categories?
+
+What is the average product price?
+
+Which products are above the average price?
+
+ShopSphere addresses these types of questions by organizing the information into related relational tables and using SQL queries to analyze it.
+
+💡 Project Objective
+
+The primary objective of ShopSphere is to gain hands-on experience with MySQL and SQL through a realistic business scenario.
+
+The project focuses on learning how to move from:
+
+Raw Business Requirements
+        ↓
+Database Design
+        ↓
+Tables
+        ↓
+Relationships
+        ↓
+Data
+        ↓
+SQL Queries
+        ↓
+Data Analysis
+        ↓
+Business Insights
+🚀 Key Objectives
+
+The project was designed to achieve the following objectives:
+
+Database Development
+Create a relational database
+Create tables
+Define primary keys
+Define foreign keys
+Apply constraints
+Maintain relationships between tables
+SQL Development
+Write SELECT queries
+Filter data using WHERE
+Sort results using ORDER BY
+Limit query results
+Insert data
+Update data
+Delete data
+Use aggregate functions
+Group data
+Filter grouped results
+Join multiple tables
+Write subqueries
+Use conditional SQL logic
+Data Analysis
+Analyze products
+Analyze categories
+Analyze customers
+Analyze orders
+Analyze stock
+Calculate business metrics
+Generate final e-commerce analysis
+Database Management
+Create views
+Create indexes
+Understand EXPLAIN
+Work with transactions
+Use COMMIT
+Use ROLLBACK
+Use SAVEPOINT
+Professional Development
+Organize SQL scripts
+Maintain a structured GitHub repository
+Create meaningful commits
+Document the development process
+Build a portfolio-ready database project
+🛠️ Technologies & Tools
+Technology / Tool	Purpose
+MySQL	Relational database management system
+SQL	Database creation, manipulation, querying and analysis
+MySQL Workbench	Database development and query execution
+Git	Version control
+GitHub	Source code hosting and project documentation
+🗄️ Database Architecture
+
+The ShopSphere database uses a relational model.
+
+The core database entities are:
+
+┌──────────────┐
+│  Customers   │
+└──────┬───────┘
+       │
+       │ places
+       │
+       ▼
+┌──────────────┐
+│    Orders    │
+└──────┬───────┘
+       │
+       │ contains
+       │
+       ▼
+┌────────────────┐
+│  Order Items   │
+└───────┬────────┘
+        │
+        │ references
+        │
+        ▼
+┌──────────────┐
+│   Products   │
+└──────┬───────┘
+       │
+       │ belongs to
+       │
+       ▼
+┌──────────────┐
+│  Categories  │
+└──────────────┘
+📊 Main Database Tables
+1. Customers
+
+The customers table stores information related to customers.
+
+It represents the people who use the e-commerce system and place orders.
+
+The table is used for:
+
+Customer identification
+Customer-related analysis
+Connecting customers with orders
+Customer order analysis
+2. Categories
+
+The categories table stores product categories.
+
+Categories allow products to be organized into logical groups.
+
+This table is useful for:
+
+Category-wise product analysis
+Counting products by category
+Category-level analysis
+Connecting products with their categories
+3. Products
+
+The products table contains information about products available in the store.
+
+Product information is used throughout the project for:
+
+Product analysis
+Price analysis
+Stock analysis
+Category analysis
+Sales analysis
+4. Orders
+
+The orders table represents customer orders.
+
+Orders connect customers with their purchases.
+
+This allows the project to answer questions such as:
+
+How many orders exist?
+Which customer placed an order?
+How many orders are associated with a customer?
+Which products are included in orders?
+5. Order Items
+
+The order_items table represents individual products within an order.
+
+This table is important because an order can contain multiple products.
+
+It creates the connection between:
+
+Orders
+   +
+Products
+
+and allows analysis involving:
+
+Quantity purchased
+Products in an order
+Product sales
+Order-level analysis
+🔗 Database Relationships
+
+The project demonstrates relational database relationships.
+
+Customer → Orders
+
+A customer can place multiple orders.
+
+Customer
+   │
+   ├── Order 1
+   ├── Order 2
+   └── Order 3
+Order → Order Items
+
+An order can contain multiple order items.
+
+Order
+   │
+   ├── Product A
+   ├── Product B
+   └── Product C
+Product → Order Items
+
+A product can appear in multiple order items.
+
+Category → Products
+
+A category can contain multiple products.
+
+Therefore, the overall relationship can be represented as:
+
+Customer
+   │
+   │ 1 : Many
+   ▼
+Orders
+   │
+   │ 1 : Many
+   ▼
+Order Items
+   │
+   │ Many : 1
+   ▼
+Products
+   │
+   │ Many : 1
+   ▼
+Categories
+🔐 Database Constraints
+
+The project also introduces important relational database constraints.
+
+PRIMARY KEY
+
+Used to uniquely identify records in a table.
+
+Example concept:
+
+PRIMARY KEY
+
+A primary key prevents duplicate identification of records.
+
+FOREIGN KEY
+
+Used to establish relationships between tables.
+
+For example:
+
+customers
+    ↓
+orders
+
+and:
+
+products
+    ↓
+order_items
+
+Foreign keys help maintain referential relationships between related tables.
+
+NOT NULL
+
+Used when a field should not contain a NULL value.
+
+UNIQUE
+
+Used when duplicate values should not be allowed for a particular field.
+
+DEFAULT
+
+Provides a default value when no value is explicitly supplied.
+
+CHECK
+
+Used to apply a condition to data.
+
+📅 15-Day Development Journey
+
+The project was developed progressively over 15 days.
+
+🟢 Day 1 — Database Creation
+Folder
+Day-01-Database/
+└── day01.sql
+Topics
 CREATE DATABASE
+USE
 CREATE TABLE
-INSERT
-SELECT
-WHERE
-ORDER BY
-LIMIT
-UPDATE
-DELETE
+Basic SQL syntax
+Initial data insertion
+Work Completed
 
+The first day established the ShopSphere database.
+
+The database was created and the initial customer-related structure and data were introduced.
+
+Purpose
+
+The goal was to understand the foundation of a relational database before moving toward more complex SQL operations.
+
+🟢 Day 2 — Tables & Constraints
+Folder
+Day-02-Tables/
+└── day02.sql
+Topics
+CREATE TABLE
+Primary keys
+Foreign keys
+NOT NULL
+UNIQUE
+DEFAULT
+CHECK
+Work Completed
+
+Additional tables were created for:
+
+Products
+Categories
+
+The project also introduced database constraints to make the data structure more reliable.
+
+Learning Outcome
+
+This stage demonstrated how database tables are designed and how constraints help maintain structured data.
+
+🟢 Day 3 — Data Insertion
+Folder
+Day-03-Insert/
+└── day03.sql
+Topics
+INSERT INTO
+Multiple record insertion
+Realistic sample data
+Work Completed
+
+The database was populated with realistic e-commerce information.
+
+Data was added for:
+
+Customers
+Categories
+Products
+Related e-commerce records
+Purpose
+
+Queries become meaningful only when the database contains usable data, so this stage established the dataset used throughout later analysis.
+
+🟢 Day 4 — SELECT Queries
+Folder
+Day-04-Select/
+└── day04.sql
+Topics
+SELECT
+SELECT *
+Selecting specific columns
+Column aliases
+Example
+SELECT product_name, price
+FROM products;
+Purpose
+
+This stage introduced basic data retrieval.
+
+The project moved from simply storing data to actually retrieving useful information from the database.
+
+🟢 Day 5 — WHERE Filtering
+Folder
+Day-05-Where/
+└── day05.sql
+Topics
+WHERE
+Comparison operators
+AND
+OR
+Operators Practiced
+=
+>
+<
+>=
+<=
+Example
+SELECT product_name, price
+FROM products
+WHERE price > 1000;
+Purpose
+
+The database can contain many records, so filtering is necessary to retrieve only relevant information.
+
+🟢 Day 6 — ORDER BY & LIMIT
+Folder
+Day-06-OrderBy-Limit/
+└── day06.sql
+Topics
+ORDER BY
+ASC
+DESC
+LIMIT
+Example
+SELECT product_name, price
+FROM products
+ORDER BY price DESC
+LIMIT 5;
+Business Use
+
+This type of query can be used to identify:
+
+Top-priced products
+Lowest-priced products
+Top records
+Highest-value records
+🟢 Day 7 — UPDATE & DELETE
+Folder
+Day-07-Update-Delete/
+└── day07.sql
+Topics
+UPDATE
+SET
+DELETE
+Conditional modification
+Example
+UPDATE products
+SET price = 999
+WHERE product_id = 1;
+DELETE Example
+DELETE FROM products
+WHERE product_id = 10;
+Important Learning
+
+The project demonstrates why WHERE conditions are important when modifying or deleting records.
+
+Without an appropriate condition, an operation can affect more records than intended.
+
+🟢 Day 8 — Aggregate Functions
+Folder
+Day-08-Aggregate-Functions/
+└── day08.sql
+Topics
+COUNT()
+SUM()
+AVG()
+MIN()
+MAX()
+Example
+SELECT AVG(price)
+FROM products;
+Business Applications
+
+Aggregate functions can answer questions such as:
+
+How many products exist?
+What is the average product price?
+What is the highest price?
+What is the lowest price?
+What is the total quantity?
+
+This was the first major step toward analytical SQL.
+
+🟢 Day 9 — GROUP BY & HAVING
+Folder
+Day-09-GroupBy-Having/
+└── day09.sql
+Topics
+GROUP BY
+HAVING
+Grouped calculations
+Example
+SELECT category_id, COUNT(*) AS product_count
+FROM products
+GROUP BY category_id;
+
+HAVING can then be used to filter groups.
+
+Business Applications
+
+This allows analysis such as:
+
+Number of products per category
+Category-level statistics
+Grouped customer analysis
+Grouped sales analysis
+🟢 Day 10 — JOINs
+Folder
+Day-10-Joins/
+└── day10.sql
+Topics
+INNER JOIN
+LEFT JOIN
+Multiple-table queries
+Table aliases
+Relational data retrieval
+Why JOINs Matter
+
+Real-world databases store information in multiple related tables.
+
+For example:
+
+Customer information
+        +
+Order information
+
+may exist in different tables.
+
+JOINs allow those tables to be combined during querying.
+
+Example
+SELECT
+    c.customer_name,
+    o.order_id
+FROM customers c
+INNER JOIN orders o
+    ON c.customer_id = o.customer_id;
+Business Applications
+
+JOINs were used to create analysis involving:
+
+Customers and orders
+Products and categories
+Orders and order items
+Products and order items
+🟢 Day 11 — Subqueries
+Folder
+Day-11-Subqueries/
+└── day11.sql
+Topics
+Nested queries
+Subqueries
+Comparing values with calculated results
+Example
+SELECT product_name, price
+FROM products
+WHERE price > (
+    SELECT AVG(price)
+    FROM products
+);
+What This Query Does
+
+The inner query:
+
+SELECT AVG(price)
+FROM products;
+
+calculates the average product price.
+
+The outer query then finds products whose price is greater than that average.
+
+Business Application
+
+Subqueries make it possible to perform more advanced comparisons and analytical questions.
+
+🟢 Day 12 — CASE & SQL Functions
+Folder
+Day-12-Case-SQL-Functions/
+└── day12.sql
+Topics
+CASE
+COALESCE()
+ROUND()
+String functions
+Date functions
+Numeric functions
+CASE
+
+CASE was used to create conditional classifications.
+
+For example:
+
+SELECT
+    product_name,
+    stock_quantity,
+    CASE
+        WHEN stock_quantity = 0 THEN 'Out of Stock'
+        WHEN stock_quantity <= 10 THEN 'Low Stock'
+        WHEN stock_quantity <= 50 THEN 'Medium Stock'
+        ELSE 'High Stock'
+    END AS stock_status
+FROM products;
+
+This converts raw numerical stock data into understandable business categories.
+
+COALESCE()
+
+Used to handle NULL values and provide an alternative value.
+
+ROUND()
+
+Used to control numerical precision when displaying calculated values.
+
+Business Importance
+
+Functions help transform raw database values into information that is easier to understand and report.
+
+🟢 Day 13 — Views & Indexes
+Folder
+Day-13-Views-Indexes/
+└── day13.sql
+Views
+
+A view allows a frequently used query to be stored as a reusable database object.
+
+Conceptually:
+
+Complex Query
+      ↓
+     VIEW
+      ↓
+Reusable Result
+
+This can simplify reporting queries.
+
+Indexes
+
+Indexes were introduced to understand how databases can improve data access for appropriate queries.
+
+The project also practiced:
+
+EXPLAIN
+
+to inspect query execution information.
+
+Learning Outcome
+
+This stage introduced the difference between simply writing a query and thinking about how database systems execute queries.
+
+🟢 Day 14 — Transactions
+Folder
+Day-14-Transactions/
+└── day14.sql
+Topics
+START TRANSACTION
+COMMIT
+ROLLBACK
+SAVEPOINT
+ROLLBACK TO SAVEPOINT
+RELEASE SAVEPOINT
+Example
+START TRANSACTION;
+
+UPDATE products
+SET stock_quantity = stock_quantity - 1
+WHERE product_id = 1;
+
+COMMIT;
+
+If a change needs to be cancelled:
+
+START TRANSACTION;
+
+UPDATE products
+SET stock_quantity = stock_quantity - 5
+WHERE product_id = 1;
+
+ROLLBACK;
+SAVEPOINT
+
+Savepoints allow a transaction to be partially rolled back.
+
+This introduced the concept of controlled database modifications rather than treating every query as an independent operation.
+
+🟢 Day 15 — Final E-Commerce Analysis
+Folder
+Day-15-Final-Analysis/
+└── day15.sql
+
+The final day combines the SQL concepts learned throughout the project.
+
+Instead of learning another isolated SQL feature, Day 15 focuses on using SQL as an analysis tool.
+
+📊 Final Analysis Areas
+1. Product Analysis
+
+The project can analyze:
+
+Product prices
+Products above average price
+Highest-priced products
+Lowest-priced products
+Product stock
+Product performance
+2. Inventory Analysis
+
+Stock-related queries can identify:
+
+Products with low stock
+Products with no stock
+Products with higher inventory
+Stock classifications using CASE
+
+Example classification:
+
+0          → Out of Stock
+1–10       → Low Stock
+11–50      → Medium Stock
+51+        → High Stock
+3. Category Analysis
+
+Category-level analysis can determine:
+
+Number of products per category
+Product distribution
+Average prices by category
+Category-related product performance
+4. Customer Analysis
+
+Customer-related analysis can determine:
+
+Customers who have placed orders
+Number of orders per customer
+Customer-related order information
+Customer spending analysis
+5. Order Analysis
+
+Order-related queries can analyze:
+
+Orders placed by customers
+Products included in orders
+Quantity purchased
+Order-level information
+6. Sales Analysis
+
+By combining:
+
+Orders
++
+Order Items
++
+Products
+
+the project can analyze sales-related information such as:
+
+Quantity sold
+Product-level sales
+Revenue calculations
+Product performance
+7. Revenue Analysis
+
+Revenue-related calculations can be performed by combining product price and purchased quantity.
+
+Conceptually:
+
+Revenue
+   =
+Product Price × Quantity Sold
+
+This can then be aggregated by:
+
+Product
+Category
+Customer
+Overall sales
+📈 Final Product Performance Analysis
+
+One of the important goals of the final stage is to combine multiple pieces of information into a meaningful report.
+
+A final product analysis can contain information such as:
+
+Product Name
+Category
+Price
+Stock Quantity
+Stock Status
+Quantity Sold
+Revenue
+
+This demonstrates the progression from raw relational data to business-oriented analysis.
+
+🔎 Example Business Questions
+
+The final database can be used to answer questions such as:
+
+Customer Questions
+Which customers have placed orders?
+How many orders has each customer placed?
+Which customers have the highest spending?
+Which customers are associated with the most orders?
+Product Questions
+Which products have the highest prices?
+Which products are above the average price?
+Which products have low stock?
+Which products are out of stock?
+Which products have the highest sales?
+Which products generate the most revenue?
+Category Questions
+How many products are in each category?
+What is the average price of products in each category?
+Which categories contain the most products?
+Which categories generate the most sales?
+Sales Questions
+How many products have been sold?
+What is the total sales quantity?
+What is the revenue generated?
+Which products contribute the most revenue?
+Inventory Questions
+Which products need stock attention?
+Which products are out of stock?
+Which products have high inventory?
+How are products distributed across stock levels?
+🧠 SQL Concepts Demonstrated
+
+The project covers the following SQL concepts.
+
+Database Management
+CREATE DATABASE
+USE
+SHOW DATABASES
+SHOW TABLES
+Table Design
+CREATE TABLE
 PRIMARY KEY
 FOREIGN KEY
 NOT NULL
 UNIQUE
 DEFAULT
 CHECK
-
-INNER JOIN
-LEFT JOIN
-RIGHT JOIN
-
+Data Manipulation
+INSERT
+UPDATE
+DELETE
+Data Retrieval
+SELECT
+WHERE
+ORDER BY
+LIMIT
+Operators
+=
+>
+<
+>=
+<=
+AND
+OR
+Aggregate Functions
 COUNT()
 SUM()
 AVG()
 MIN()
 MAX()
-
+Grouping
 GROUP BY
 HAVING
-
+JOINs
+INNER JOIN
+LEFT JOIN
+Advanced Querying
+Subqueries
+Conditional Logic
 CASE
+SQL Functions
+COALESCE()
+ROUND()
 String Functions
 Date Functions
-
-Subqueries
-UNION
-
+Numeric Functions
+Database Objects & Optimization
 Views
 Indexes
-
-Stored Procedures
-Triggers
+EXPLAIN
 Transactions
+START TRANSACTION
+COMMIT
+ROLLBACK
+SAVEPOINT
+ROLLBACK TO SAVEPOINT
+RELEASE SAVEPOINT
+📁 Complete Project Structure
 
-Learning Progress
-Day 1 — Database Creation
-* Created ShopSphere database
-* Created Customers table
-* Inserted initial customer records
-* Practiced basic SQL commands
+The repository is organized according to the 15-day learning process:
 
-Day 2 — Tables & Constraints
-* Added Products
-* Added Categories
-* Applied database constraints
+ShopSphere-MySQL/
+│
+├── README.md
+│
+├── Day-01-Database/
+│   └── day01.sql
+│
+├── Day-02-Tables/
+│   └── day02.sql
+│
+├── Day-03-Insert/
+│   └── day03.sql
+│
+├── Day-04-Select/
+│   └── day04.sql
+│
+├── Day-05-Where/
+│   └── day05.sql
+│
+├── Day-06-OrderBy-Limit/
+│   └── day06.sql
+│
+├── Day-07-Update-Delete/
+│   └── day07.sql
+│
+├── Day-08-Aggregate-Functions/
+│   └── day08.sql
+│
+├── Day-09-GroupBy-Having/
+│   └── day09.sql
+│
+├── Day-10-Joins/
+│   └── day10.sql
+│
+├── Day-11-Subqueries/
+│   └── day11.sql
+│
+├── Day-12-Case-SQL-Functions/
+│   └── day12.sql
+│
+├── Day-13-Views-Indexes/
+│   └── day13.sql
+│
+├── Day-14-Transactions/
+│   └── day14.sql
+│
+└── Day-15-Final-Analysis/
+    └── day15.sql
+🔄 How the SQL Files Build on Each Other
 
-Day 3 — Data Insertion
-* Added realistic customers
-* Added products and categories
-* Practiced INSERT statements
+The project is intentionally sequential.
 
-Day 4 — SELECT
-* Retrieved database information
-* Practiced selecting specific columns
-* Created basic business queries
+Step 1
 
-Day 5 — WHERE
-* Filtered records
-* Used comparison operators
-* Practiced multiple conditions
+Day 1 establishes the database.
 
-Day 6 — ORDER BY & LIMIT
-* Sorted records
-* Found top products
-* Found highest-value customers
+Step 2
 
-Day 7 — UPDATE & DELETE
-* Modified existing records
-* Removed test records
-* Practiced safe data management
+Day 2 adds the required tables and constraints.
 
-Day 8 — Keys & Relationships
-* Added primary keys
-* Added foreign keys
-* Created Orders and related tables
+Step 3
 
-Day 9 — JOINs
-* Connected multiple tables
-* Created customer-order reports
-* Created product-sales reports
+Day 3 populates the database.
 
-Day 10 — Aggregate Functions
-* Calculated total sales
-* Calculated average order value
-* Counted orders and customers
+Step 4
 
-Day 11 — GROUP BY & HAVING
-* Analyzed sales by category
-* Analyzed customers by spending
-* Filtered grouped results
+Days 4–7 introduce basic querying and data manipulation.
 
-Day 12 — SQL Functions
-* Used date functions
-* Used string functions
-* Used CASE statements
+Step 5
 
-Day 13 — Subqueries & UNION
-* Created advanced queries
-* Used nested queries
-* Combined query results
+Days 8–9 introduce analytical SQL.
 
-Day 14 — Views & Indexes
-* Created reusable database views
-* Added indexes
-* Improved query organization and performance
+Step 6
 
-Day 15 — Final Project
-* Completed database
-* Created final SQL scripts
-* Added ER diagram
-* Added business analysis queries
-* Completed project documentation
-  
-How to Run the Project
-1. Install MySQL
-Install MySQL and MySQL Workbench.
-2. Clone the repository
+Day 10 connects related tables using JOINs.
+
+Step 7
+
+Day 11 introduces more advanced queries using subqueries.
+
+Step 8
+
+Day 12 transforms raw data into meaningful classifications using SQL functions and CASE.
+
+Step 9
+
+Day 13 introduces reusable views and indexes.
+
+Step 10
+
+Day 14 introduces transaction management.
+
+Step 11
+
+Day 15 combines the concepts into final e-commerce analysis.
+
+Therefore, the project represents one continuous database development process rather than 15 unrelated SQL exercises.
+
+🚀 How to Run the Project
+Prerequisites
+
+Before running the project, install:
+
+MySQL Server
+MySQL Workbench
+Git
+1. Clone the Repository
 git clone https://github.com/prerna2006raj-ctrl/ShopSphere-MySQL.git
-3. Open MySQL Workbench
-Connect to your MySQL server.
-4. Run the SQL files
-Start with:
+
+Move into the project:
+
+cd ShopSphere-MySQL
+2. Open MySQL Workbench
+
+Open MySQL Workbench and connect to your MySQL Server.
+
+3. Execute the SQL Files
+
+Run the SQL files in order:
+
 Day-01
-↓
+   ↓
 Day-02
-↓
+   ↓
 Day-03
-↓
-...
-↓
+   ↓
+Day-04
+   ↓
+Day-05
+   ↓
+Day-06
+   ↓
+Day-07
+   ↓
+Day-08
+   ↓
+Day-09
+   ↓
+Day-10
+   ↓
+Day-11
+   ↓
+Day-12
+   ↓
+Day-13
+   ↓
+Day-14
+   ↓
 Day-15
-For the final version, you can run:
-Day-15-Final-Project/database.sql
 
-GitHub Workflow
-Each day follows the same process:
-Learn MySQL Concept
-        ↓
-Practice in MySQL Workbench
-        ↓
+Running the files sequentially helps preserve the progression of the database and learning process.
+
+🧪 Query Testing Approach
+
+Each SQL stage was practiced and tested in MySQL Workbench.
+
+The general development process was:
+
+Write Query
+    ↓
+Execute Query
+    ↓
+Check Result
+    ↓
+Identify Errors
+    ↓
+Correct Query
+    ↓
+Execute Again
+    ↓
+Save Working Query
+
+For data modification queries, conditions were used carefully to avoid unintentionally affecting unrelated records.
+
+🔧 Database Development Approach
+
+The project follows a practical development approach:
+
+1. Design
+
+Identify the entities required by the e-commerce system.
+
+2. Create
+
+Create the database and tables.
+
+3. Constrain
+
+Apply keys and constraints.
+
+4. Populate
+
+Insert realistic sample data.
+
+5. Query
+
+Retrieve and filter information.
+
+6. Analyze
+
+Use aggregation and grouping.
+
+7. Relate
+
+Combine information using JOINs.
+
+8. Advance
+
+Use subqueries and SQL functions.
+
+9. Optimize
+
+Introduce views, indexes and EXPLAIN.
+
+10. Control
+
+Use transactions for controlled modifications.
+
+11. Analyze Business Data
+
+Use the complete database for final e-commerce analysis.
+
+🔄 Git & GitHub Workflow
+
+Git was used to track the project throughout development.
+
+The project follows the workflow:
+
+Learn Concept
+      ↓
+Practice SQL
+      ↓
 Add SQL to Project
-        ↓
-Save dayXX.sql
-        ↓
-Update README
-        ↓
-git add .
-        ↓
-git commit
-        ↓
-git push
-Example:
-git add .
-git commit -m "Day 5: Added WHERE filtering queries"
-git push origin main
+      ↓
+Test Queries
+      ↓
+Save Changes
+      ↓
+Git Add
+      ↓
+Git Commit
+      ↓
+Git Push
 
-GitHub Commit History
-The project will maintain meaningful daily commits:
+Typical commands:
+
+git status
+git add .
+git commit -m "Day 10: Added JOIN queries"
+git push origin main
+📝 Meaningful Commit Strategy
+
+The project uses day-based commits to make the development history understandable.
+
+Example progression:
+
 Day 1: Created ShopSphere database
 Day 2: Added products and categories tables
 Day 3: Added sample e-commerce data
 Day 4: Added SELECT queries
-Day 5: Added filtering queries
-Day 6: Added sorting and limiting
+Day 5: Added WHERE filtering
+Day 6: Added ORDER BY and LIMIT
 Day 7: Added UPDATE and DELETE operations
-Day 8: Added keys and table relationships
-Day 9: Added JOIN queries
-Day 10: Added aggregate functions
-Day 11: Added GROUP BY and HAVING analysis
-Day 12: Added SQL functions
-Day 13: Added subqueries and UNION
-Day 14: Added views and indexes
-Day 15: Completed ShopSphere MySQL project
+Day 8: Added aggregate functions
+Day 9: Added GROUP BY and HAVING
+Day 10: Added JOIN queries
+Day 11: Added subqueries
+Day 12: Added CASE and SQL functions
+Day 13: Added views and indexes
+Day 14: Added transaction operations
+Day 15: Completed final e-commerce analysis
 
-Learning Outcome
-After completing this project, I will have practical experience with:
-* Relational database design
-* SQL query writing
-* Data manipulation
-* Database relationships
-* Data analysis using SQL
-* Advanced SQL queries
-* Database optimization
-* Git and GitHub
-* Real-world database development
-  
- Author
+This makes the GitHub repository show the progression of the project instead of only showing one final version.
+
+📊 What Makes This a Practical Project?
+
+ShopSphere is not only a collection of SQL syntax examples.
+
+Each SQL concept is connected to an e-commerce use case.
+
+For example:
+
+Basic SELECT
+Retrieve product information
+WHERE
+Find products matching a condition
+ORDER BY + LIMIT
+Find the highest-priced products
+Aggregate Functions
+Calculate totals and averages
+GROUP BY
+Analyze products by category
+JOIN
+Combine customer and order information
+Subquery
+Find products above the average price
+CASE
+Classify inventory status
+Views
+Create reusable reports
+Indexes
+Understand query performance
+Transactions
+Control database modifications
+Final Analysis
+Turn database records into business-oriented information
+🎓 Skills Demonstrated
+
+This project demonstrates practical experience in:
+
+SQL
+SQL syntax
+Data retrieval
+Data filtering
+Data manipulation
+Aggregation
+Grouping
+JOINs
+Subqueries
+Conditional logic
+SQL functions
+MySQL
+Database creation
+Relational table design
+Constraints
+Keys
+Views
+Indexes
+Transactions
+Query execution
+Data Analysis
+Product analysis
+Category analysis
+Customer analysis
+Order analysis
+Inventory analysis
+Revenue analysis
+Business-oriented reporting
+Development Tools
+MySQL Workbench
+Git
+GitHub
+Software Development Practices
+Incremental development
+Organized project structure
+Version control
+Meaningful commits
+Documentation
+Query testing
+📈 Learning Progression
+
+The project demonstrates a clear progression in SQL knowledge:
+
+                 SHOPSPHERE
+                     │
+                     ▼
+             Database Creation
+                     │
+                     ▼
+              Table Design
+                     │
+                     ▼
+             Data Insertion
+                     │
+                     ▼
+             Basic SELECT
+                     │
+                     ▼
+               Filtering
+                     │
+                     ▼
+             Sorting & LIMIT
+                     │
+                     ▼
+           UPDATE & DELETE
+                     │
+                     ▼
+          Aggregate Functions
+                     │
+                     ▼
+           GROUP BY & HAVING
+                     │
+                     ▼
+                  JOINs
+                     │
+                     ▼
+               Subqueries
+                     │
+                     ▼
+         CASE & SQL Functions
+                     │
+                     ▼
+             Views & Indexes
+                     │
+                     ▼
+               Transactions
+                     │
+                     ▼
+          Final Data Analysis
+💼 Recruiter Perspective
+
+This project demonstrates the ability to work with a relational database from the beginning of the development process through data analysis.
+
+The project covers three important areas:
+
+1. Database Development
+
+Understanding how data is structured and related.
+
+Database
+   ↓
+Tables
+   ↓
+Keys
+   ↓
+Relationships
+   ↓
+Constraints
+2. SQL Development
+
+Writing SQL queries to interact with the database.
+
+SELECT
+WHERE
+ORDER BY
+GROUP BY
+HAVING
+JOIN
+Subqueries
+CASE
+Functions
+3. Data Analysis
+
+Using SQL to answer practical business questions.
+
+Raw Data
+   ↓
+SQL Queries
+   ↓
+Calculations
+   ↓
+Grouping
+   ↓
+Analysis
+   ↓
+Business Information
+🏆 Project Highlights
+✔️ 15-Day Structured Development
+
+The project was developed incrementally over 15 stages.
+
+✔️ Real-World Domain
+
+The project uses an e-commerce scenario rather than unrelated sample SQL queries.
+
+✔️ Relational Database
+
+Multiple related entities are used to demonstrate relational database concepts.
+
+✔️ Progressive SQL Learning
+
+The project progresses from basic SQL to advanced querying and analysis.
+
+✔️ Business-Oriented Queries
+
+SQL queries are connected to realistic e-commerce questions.
+
+✔️ Database Management
+
+The project covers views, indexes and transactions in addition to basic querying.
+
+✔️ GitHub Version Control
+
+The project was maintained using Git and GitHub with meaningful development stages.
+
+✔️ Documentation
+
+The repository documents the project structure, learning journey, database concepts and execution process.
+
+📚 Complete Concept Checklist
+DATABASE
+[x] CREATE DATABASE
+[x] USE DATABASE
+
+TABLE DESIGN
+[x] CREATE TABLE
+[x] PRIMARY KEY
+[x] FOREIGN KEY
+[x] NOT NULL
+[x] UNIQUE
+[x] DEFAULT
+[x] CHECK
+
+DATA MANIPULATION
+[x] INSERT
+[x] UPDATE
+[x] DELETE
+
+DATA RETRIEVAL
+[x] SELECT
+[x] WHERE
+[x] ORDER BY
+[x] LIMIT
+
+OPERATORS
+[x] =
+[x] >
+[x] <
+[x] >=
+[x] <=
+[x] AND
+[x] OR
+
+AGGREGATION
+[x] COUNT()
+[x] SUM()
+[x] AVG()
+[x] MIN()
+[x] MAX()
+
+GROUPING
+[x] GROUP BY
+[x] HAVING
+
+JOINS
+[x] INNER JOIN
+[x] LEFT JOIN
+
+ADVANCED QUERYING
+[x] Subqueries
+
+CONDITIONAL LOGIC
+[x] CASE
+
+SQL FUNCTIONS
+[x] COALESCE()
+[x] ROUND()
+[x] String Functions
+[x] Date Functions
+[x] Numeric Functions
+
+DATABASE OBJECTS
+[x] Views
+[x] Indexes
+
+QUERY ANALYSIS
+[x] EXPLAIN
+
+TRANSACTIONS
+[x] START TRANSACTION
+[x] COMMIT
+[x] ROLLBACK
+[x] SAVEPOINT
+[x] ROLLBACK TO SAVEPOINT
+[x] RELEASE SAVEPOINT
+📌 Project Status
+Day 01  ✅ Database Creation
+Day 02  ✅ Tables & Constraints
+Day 03  ✅ Data Insertion
+Day 04  ✅ SELECT Queries
+Day 05  ✅ WHERE Filtering
+Day 06  ✅ ORDER BY & LIMIT
+Day 07  ✅ UPDATE & DELETE
+Day 08  ✅ Aggregate Functions
+Day 09  ✅ GROUP BY & HAVING
+Day 10  ✅ JOINs
+Day 11  ✅ Subqueries
+Day 12  ✅ CASE & SQL Functions
+Day 13  ✅ Views & Indexes
+Day 14  ✅ Transactions
+Day 15  ✅ Final E-Commerce Analysis
+🎉 Status: Completed
+
+The 15-day ShopSphere MySQL project is complete.
+
+🔮 Possible Future Improvements
+
+The current project focuses on SQL and relational database fundamentals. Possible future extensions could include:
+
+Adding a payment-related module
+Adding more extensive order status management
+Adding additional reporting views
+Connecting the database with a backend application
+Creating an API for database operations
+Building a dashboard for e-commerce analytics
+Connecting the database to a data visualization tool
+Adding a larger dataset for more realistic analysis
+
+These are future extensions and are not part of the current 15-day implementation.
+
+📖 How to Explore This Repository
+
+For someone reviewing the project, the recommended order is:
+
+Start with the README
+
+Understand the project architecture and objectives.
+
+Then open Day 1
+
+Understand how the database was started.
+
+Follow Days 2–7
+
+See how the database structure and basic SQL operations developed.
+
+Explore Days 8–12
+
+See the transition from basic SQL to analytical queries.
+
+Review Days 13–14
+
+Understand database views, indexes and transaction management.
+
+Finally open Day 15
+
+See how the individual SQL concepts were combined for final e-commerce analysis.
+
+This makes the repository easy to understand even for someone who has not seen the project before.
+
+👩‍💻 Author
 Prerna Raj
-MySQL Learning Project — 2026
+
+MySQL / SQL Learning & Portfolio Project
+
+Year: 2026
+
+GitHub:
+
+https://github.com/prerna2006raj-ctrl
+
+⭐ Final Project Summary
+
+ShopSphere started as a basic MySQL database and gradually developed into a complete SQL-based e-commerce analysis project.
+
+The project demonstrates the complete journey:
+
+Design
+  ↓
+Create
+  ↓
+Populate
+  ↓
+Query
+  ↓
+Filter
+  ↓
+Sort
+  ↓
+Modify
+  ↓
+Aggregate
+  ↓
+Group
+  ↓
+Join
+  ↓
+Analyze
+  ↓
+Optimize
+  ↓
+Control Transactions
+  ↓
+Final Business Analysis
+
+Through this project, I practiced using SQL not only to store and retrieve information, but also to connect related data, perform calculations, analyze business scenarios, and produce meaningful information from a relational database.
+
+ShopSphere — From SQL Fundamentals to E-Commerce Data Analysis. 🚀
+
+
 
 
