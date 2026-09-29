@@ -30,8 +30,8 @@ Technologies Used
 | Day 1  | Database Creation      | Create ShopSphere database and Customers table  | ✅      |
 | Day 2  | Tables & Constraints   | Create Products and Categories tables           | ✅      |
 | Day 3  | INSERT                 | Insert realistic e-commerce data                | ✅      |
-| Day 4  | SELECT                 | Basic data retrieval and business queries       | ⬜      |
-| Day 5  | WHERE                  | Filter customers, products and orders           | ⬜      |
+| Day 4  | SELECT                 | Basic data retrieval and business queries       | ✅      |
+| Day 5  | WHERE                  | Filter customers, products and orders           | ✅      |
 | Day 6  | ORDER BY & LIMIT       | Sorting and finding top records                 | ⬜      |
 | Day 7  | UPDATE & DELETE        | Manage and modify database records              | ⬜      |
 | Day 8  | Primary & Foreign Keys | Create Orders and establish relationships       | ⬜      |
